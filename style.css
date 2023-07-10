@@ -113,10 +113,15 @@ li{
     margin-left: 50px;
 } */
 
-.header .contacts-list{
+.contacts-list{
     /* outline: solid 1px red; */
     display: flex;
+    align-items: center;
     margin-left: auto;
+}
+
+.contacts-icon{
+    fill: rgba(117, 117, 117, 1);
 }
 
 .nav-link,
@@ -149,9 +154,9 @@ li{
 .hero{
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url('./images/Img\ \(15\).jpg');
+    background-image: url('./images/Img.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
