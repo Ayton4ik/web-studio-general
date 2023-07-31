@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Ім'я</label>
+        <input type="text" value="name" name="name" id="name" autofocus>
+<br>
+        <label for="tel">Номер телефону</label>
+        <input type="tel" name="tel" id="tel" placeholder="+380">
+<br>
+    <label for="mail">Електронна адреса</label>
+        <input type="email" name="mail" id="mail">
+<br>
+        <input type="checkbox" name="topic" id="HTML">
+        <label for="HTML">HTML</label>
+
+        <input type="checkbox" name="topic" id="JC">
+        <label for="JC">JC</label>
+
+        <input type="checkbox" name="topic" id="CSS">
+        <label for="CSS">CSS</label>
+<br>
+        <input type="radio" name="level" id="Junior">
+        <label for="Junior">Junior</label>
+
+        <input type="radio" name="level" id="Middle">
+        <label for="Middle">Middle</label>
+
+        <input type="radio" name="level" id="Senior">
+        <label for="Senior">Senior</label>
+<br>
+        <button type="submit">Відправити</button>
+    </form>
+    <div>
+        <input type="date">
+<br>
+        <input type="datetime-local">
+<br>
+        <input type="file">
+<br>
+        <input type="range">
+    </div>
+
+    <textarea type="text" rows="5" cols="30" placeholder="Ваші коментарі"></textarea>
+</body>
+</html>
