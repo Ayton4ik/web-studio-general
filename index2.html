@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-    <form>
+    <!-- <form>
         <label for="name">Ім'я</label>
         <input type="text" value="name" name="name" id="name" autofocus>
 <br>
@@ -51,6 +51,34 @@
         <input type="range">
     </div>
 
-    <textarea type="text" rows="5" cols="30" placeholder="Ваші коментарі"></textarea>
+    <textarea type="text" rows="5" cols="30" placeholder="Ваші коментарі"></textarea> -->
+
+    <form>
+        <label>
+                Ім'я
+                <input type="text" name="name" autofocus>
+        </label>
+        <label>
+                Прізвище
+                <input type="text" name="surname">
+        </label>
+<br>
+        <label>
+                Номер телефону
+                <input type="tel" name="tel" placeholder="+380">
+        </label>
+<br>
+        <label>
+                Електронна адреса
+                <input type="email" name="email">
+        </label>
+<br>
+        <label>
+                Ваша адреса
+                <input type="text" name="adress">
+        </label>
+<br>
+        <button type="submit">Замовити</button>
+    </form>
 </body>
 </html>
