@@ -202,6 +202,46 @@ h1{
     background-color: var(--accent-color);
 }
 
+/* Модальне вікно */
+
+.backdrop{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.20);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal{
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    background-color: var(--background-color);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.backdrop .close{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.10); 
+    background-color: var(--background-color);
+}
+
 /* Переваги */
 
 .advantages{
