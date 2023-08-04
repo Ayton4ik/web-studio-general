@@ -372,14 +372,25 @@ h1{
 .logo-buyers{
     width: 106px;
     height: 60px;
-    fill: #AFB1B8;
+    fill: currentColor;
+
 }
 
-.image{
+.buyers-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
     width: 170px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
+}
+
+.buyers-link:hover,
+.buyers-link:focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
     /* Футер */
