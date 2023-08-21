@@ -81,6 +81,17 @@ h1{
     padding: 40px;
 }
 
+.backdrop.is-hidden .modal{
+    transform: scale(1.1)
+    translate(-50%, -50%)
+    rotateZ(0deg);
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
 .backdrop .close{
     position: absolute;
     right: 8px;
@@ -534,4 +545,30 @@ address{
 
 .ex-text{
     padding: 20px 24px;
+}
+
+.thumb{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    color: var(--background-color);
+    background: rgba(33, 150, 243, 0.90);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.examples li:hover .overlay{
+    transform: translateY(0);
 }
