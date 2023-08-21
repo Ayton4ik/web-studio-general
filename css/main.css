@@ -276,8 +276,7 @@ h1 {
   left: 12px;
   width: 18px;
   height: 18px;
-  fill: black;
-  background-color: red;
+  fill: currentColor;
 }
 
 .form-field {
@@ -309,8 +308,12 @@ h1 {
   padding-left: 42px;
 }
 
-.form-field input:hover {
+.form-field input:hover,
+.form-field input:focus {
   border-color: var(--accent-color);
+}
+
+.form-field:focus-within .form-svg {
   fill: var(--accent-color);
 }
 
