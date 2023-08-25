@@ -5,28 +5,25 @@
 
     padding-bottom: 25px;
     padding-top: 24px;
-}
 
-.header nav{
-    /* outline: solid 1px red; */
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
+    nav{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
 }
 
 .logo{
-
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
 
     color: var(--accent-color);
-}
 
-.logo > span{
-    color: var(--logo-color);
+    span{
+        color: var(--logo-color);
+    }
 }
 
 .nav-list{
@@ -91,15 +88,18 @@
     color: var(--primary-text-color);
     padding-bottom: 32px;
     padding-top: 32px;
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
 }
 
 .contacts-link{
     color: var(--secondary-text-color);
-}
 
-.nav-link:hover,
-.nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus{
-    color: var(--accent-color);
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
 }

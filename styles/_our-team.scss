@@ -1,0 +1,70 @@
+.our-team{
+    background-color: #F5F4FA;
+}
+
+.our-team-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-team-item{
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.img-our-team{
+    width: 270px;
+    padding-bottom: 30px;
+}
+
+
+.name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    padding-bottom: 10px;
+
+    color: var(--primary-text-color);
+}
+
+.job{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    padding-bottom: 30px;
+
+    color: var(--secondary-text-color);
+    }
+
+.network-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.network-list a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: rgba(175, 177, 184, 1);
+}
+
+.network-list a:hover,
+.network-list a:focus{
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border-radius: 50%;
+}
+
+.network-icon{
+    fill: currentColor;
+}
