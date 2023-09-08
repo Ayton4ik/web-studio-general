@@ -49,18 +49,31 @@ li {
 }
 
 .section {
-  /* outline: solid 2px green; */
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .container {
-  /* outline: solid 3px red; */
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: solid red 2px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .container.header {
@@ -408,16 +421,41 @@ form button {
   background-color: var(--accent-color);
 }
 
-.advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
-.advantages .item {
-  width: 270px;
+@media screen and (min-width: 1200px) {
+  .advantages {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 480px) {
+  .advantages .item {
+    width: 450px;
+  }
+  .advantages .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages .item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages .item {
+    width: 270px;
+  }
 }
 .advantages .item::before {
   content: "";
@@ -431,6 +469,11 @@ form button {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 767px) {
+  .advantages-title {
+    text-align: center;
+  }
 }
 .advantages-text {
   font-weight: 400;

@@ -1,17 +1,24 @@
 .section{
-    /* outline: solid 2px green; */
-
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-
-
 .container{
-    /* outline: solid 3px red; */
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: solid red 2px;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }
