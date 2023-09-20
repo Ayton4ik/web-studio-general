@@ -11,6 +11,10 @@
         align-items: center;
         display: flex;
     }
+
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+    }
 }
 
 .logo{
@@ -102,4 +106,39 @@
     &:focus{
         color: var(--accent-color);
     }
+}
+
+.burger-button{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.burger-button.is-open .btn-close{
+    display: block;
+}
+
+.burger-button.is-open .btn-open{
+    display: none;
+}
+
+.btn-close{
+    display: none;
+}
+
+
+
+.mobile-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 796px;
+    background-color: var(--background-color);
 }
