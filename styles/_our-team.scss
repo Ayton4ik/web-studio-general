@@ -2,12 +2,15 @@
     background-color: #F5F4FA;
 
     &-list{
-        display: flex;
-        justify-content: space-between;
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &-item{
         padding-bottom: 30px;
+        margin-bottom: 30px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -16,8 +19,15 @@
 }
 
 .img-our-team{
-    width: 270px;
     padding-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 450px;
+    }
 }
 
 

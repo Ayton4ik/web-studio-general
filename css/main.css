@@ -124,9 +124,10 @@ li {
     margin-top: 32px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .nav-item:not(:first-child),
-  .contacts-item:not(:last-child) {
+  .contacts-item:not(:first-child) {
     margin-left: 50px;
   }
 }
@@ -275,6 +276,13 @@ li {
     width: 480px;
     height: 796px;
     background-color: var(--background-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .mobile-menu.is-open {
@@ -650,24 +658,36 @@ form button {
 .our-team {
   background-color: #F5F4FA;
 }
-.our-team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .our-team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .our-team-item {
   padding-bottom: 30px;
+  margin-bottom: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .img-our-team {
-  width: 270px;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .img-our-team {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .img-our-team {
+    width: 450px;
+  }
 }
 
 .name {

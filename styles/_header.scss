@@ -37,6 +37,10 @@
     @media screen and (max-width: 767px) {
         margin-top: 32px;
     }
+}
+
+.nav-item:not(:first-child),
+.contacts-item:not(:first-child){
     @media screen and (min-width: $desktop) {
         margin-left:50px;
     }
@@ -168,6 +172,10 @@
         width: 480px;
         height: 796px;
         background-color: var(--background-color);
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
     }
 
     &.is-open{
