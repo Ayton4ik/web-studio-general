@@ -297,8 +297,8 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: -webkit-image-set(url("../images/hero-bg@1x.jpg") 1x, url("../images/hero-bg@2x.jpg") 2x, url("../images/hero-bg@3x.jpg") 3x);
-  background: image-set("../images/hero-bg@1x.jpg" 1x, "../images/hero-bg@2x.jpg" 2x, "../images/hero-bg@3x.jpg" 3x);
+  background-image: -webkit-image-set(url("../images/hero-bg@1x.jpg") 1x, url("../images/hero-bg@2x.jpg") 2x, url("../images/hero-bg@3x.jpg") 3x);
+  background-image: image-set("../images/hero-bg@1x.jpg" 1x, "../images/hero-bg@2x.jpg" 2x, "../images/hero-bg@3x.jpg" 3x);
 }
 .hero .container {
   text-align: center;
