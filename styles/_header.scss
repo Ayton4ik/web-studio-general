@@ -25,7 +25,7 @@
 }
 
 .nav-list{
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
         display: flex;
     }
 }
@@ -34,6 +34,12 @@
 .contacts-item:not(:last-child){
     @media screen and (max-width: 767px) {
         margin-top: 32px;
+    }
+}
+
+.nav-item:not(:first-child){
+    @media screen and (min-width: $tablet) {
+        margin-left:50px;
     }
 }
 
@@ -55,13 +61,17 @@
 } */
 
 .contacts-list{
-    display: flex;
-
     @media screen and (max-width: 767px) {
+        display: flex;
         flex-direction: column-reverse;
     }
 
+    @media screen and (min-width: $tablet) {
+        margin-left: 70px;
+    }
+
     @media screen and (min-width: $desktop) {
+        display: flex;
         align-items: center;
         margin-left: 300px
     }
@@ -81,7 +91,7 @@
     line-height: normal;
     letter-spacing: 0.8px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
         position: relative;
         font-weight: 500;
         font-size: 14px;
@@ -167,13 +177,18 @@
         top: 0;
         left: 0;
         padding: 40px 48px;
-        width: 480px;
+        max-width: 480px;
         height: 796px;
         background-color: var(--background-color);
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
         display: flex;
+        align-items: center;
+        margin-left: 88px;
+    }
+
+    @media screen and (min-width: $desktop) {
         margin-left: 93px;
     }
 
