@@ -1,7 +1,6 @@
 .container.header{
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
 
     padding-bottom: 25px;
@@ -28,7 +27,6 @@
 .nav-list{
     @media screen and (min-width: $desktop) {
         display: flex;
-        margin-left: 93px;
     }
 }
 
@@ -65,7 +63,7 @@
 
     @media screen and (min-width: $desktop) {
         align-items: center;
-        margin-left: auto;
+        margin-left: 300px
     }
 }
 
@@ -176,6 +174,7 @@
 
     @media screen and (min-width: $desktop) {
         display: flex;
+        margin-left: 93px;
     }
 
     &.is-open{

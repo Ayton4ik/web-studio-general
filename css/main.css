@@ -81,9 +81,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -114,7 +111,6 @@ li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 93px;
   }
 }
 
@@ -160,7 +156,7 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: auto;
+    margin-left: 300px;
   }
 }
 
@@ -283,6 +279,7 @@ li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 93px;
   }
 }
 .mobile-menu.is-open {
@@ -292,27 +289,37 @@ li {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: -webkit-image-set(url("../images/hero-bg@1x.jpg") 1x, url("../images/hero-bg@2x.jpg") 2x, url("../images/hero-bg@3x.jpg") 3x);
   background-image: image-set("../images/hero-bg@1x.jpg" 1x, "../images/hero-bg@2x.jpg" 2x, "../images/hero-bg@3x.jpg" 3x);
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .hero .container {
   text-align: center;
 }
 
 h1 {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 0.06em;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
   color: var(--background-color);
 }
@@ -603,6 +610,12 @@ form button {
   background-image: url("../images/astronaut-1.svg");
 }
 
+@media screen and (max-width: 767px) {
+  .section-what-we-do {
+    display: none;
+  }
+}
+
 .about-us {
   text-align: center;
   font-weight: 700;
@@ -747,9 +760,27 @@ form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .buyers-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buyers-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .buyers-item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .logo-buyers {
@@ -769,10 +800,14 @@ form button {
       -ms-flex-align: center;
           align-items: center;
   color: #AFB1B8;
-  width: 170px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
+}
+@media screen and (min-width: 1200px) {
+  .buyers-link {
+    width: 170px;
+  }
 }
 .buyers-link:hover, .buyers-link:focus {
   color: var(--accent-color);
