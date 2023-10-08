@@ -2,8 +2,13 @@
     background-color: #F5F4FA;
 
     &-list{
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: $tablet) {
             display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        @media screen and (min-width: $desktop) {
             justify-content: space-between;
         }
     }
@@ -15,18 +20,27 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+
+        @media screen and (min-width: $tablet) {
+            margin: 15px;
+            width: calc((100% - 30px * 2) / 2);
+        }
     }
 }
 
 .img-our-team{
     padding-bottom: 30px;
 
-    @media screen and (min-width: $desktop) {
-        width: 270px;
-    }
-
     @media screen and (max-width: 767px) {
         width: 450px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
     }
 }
 

@@ -314,11 +314,16 @@ li {
   background-position: center;
   background-image: -webkit-image-set(url("../images/hero-bg@1x.jpg") 1x, url("../images/hero-bg@2x.jpg") 2x, url("../images/hero-bg@3x.jpg") 3x);
   background-image: image-set("../images/hero-bg@1x.jpg" 1x, "../images/hero-bg@2x.jpg" 2x, "../images/hero-bg@3x.jpg" 3x);
+  padding-top: 118px;
 }
 @media screen and (max-width: 767px) {
   .hero {
-    padding-top: 118px;
     padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 198px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -630,7 +635,7 @@ form button {
   background-image: url("../images/astronaut-1.svg");
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-what-we-do {
     display: none;
   }
@@ -692,11 +697,18 @@ form button {
 .our-team {
   background-color: #F5F4FA;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .our-team-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team-list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -709,18 +721,29 @@ form button {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .our-team-item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
 
 .img-our-team {
   padding-bottom: 30px;
 }
-@media screen and (min-width: 1200px) {
-  .img-our-team {
-    width: 270px;
-  }
-}
 @media screen and (max-width: 767px) {
   .img-our-team {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-our-team {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img-our-team {
+    width: 270px;
   }
 }
 
@@ -781,7 +804,7 @@ form button {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .buyers-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -800,6 +823,12 @@ form button {
   .buyers-item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .buyers-item {
+    margin: 15px;
+    width: calc((100% - 90px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -831,6 +860,11 @@ form button {
 @media screen and (max-width: 767px) {
   .buyers-link {
     padding: 16px 52px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buyers-link {
+    padding: 16px 60px;
   }
 }
 @media screen and (min-width: 1200px) {
