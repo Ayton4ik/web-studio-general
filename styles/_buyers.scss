@@ -16,7 +16,7 @@
         width: calc((100% - 15px * 4) / 2);
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         margin: 15px;
         width: calc((100% - 15px * 6) / 3);
     }

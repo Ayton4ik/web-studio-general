@@ -2,13 +2,14 @@
     background-color: #F5F4FA;
 
     &-list{
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
             display: flex;
             flex-wrap: wrap;
             margin: -15px;
         }
 
         @media screen and (min-width: $desktop) {
+            display: flex;
             justify-content: space-between;
         }
     }
